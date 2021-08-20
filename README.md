@@ -15,7 +15,7 @@ An application that can be used to keep track of sneakers and show off pictures 
 
 ## Component Hierarchy
 
-![Component Hierarchy](blob:https://whimsical.com/f5ce8059-59d1-4be5-8d98-71bed6a9e091)
+![Component Hierarchy](https://whimsical.com/f5ce8059-59d1-4be5-8d98-71bed6a9e091)
 
 #### MVP 
 
