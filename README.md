@@ -57,6 +57,14 @@ S - Significant Priority (Next in line)
 | Post MVP | S | 3hrs| -hrs | -hrs |
 | Total | H | 16hrs| -hrs | -hrs |
 
+
+## SWOT Analysis
+
+Strengths: 
+Weaknessess: 
+Opportunities: 
+Threats:
+
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
