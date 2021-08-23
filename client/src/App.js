@@ -28,14 +28,14 @@ function App() {
       <div className="App">
         <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
-            <Link to={`/${sneaker.id}`}>{sneaker.fields.name}</Link>
+            <Link to={`/${sneaker.id}`} key={index}>{sneaker.fields.name} </Link>
           ))}
         </Route>
         <Route path="/new" exact>
           <Form setToggleFetch={setToggleFetch} />
         </Route>
-        <Route path={"/:id"} exact>
-        <Sneaker sneakers={sneakers}/>
+        <Route path={"/sneaker/:id"} exact>
+          <Sneaker sneakers={sneakers} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path='/edit/:id'>
         <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
