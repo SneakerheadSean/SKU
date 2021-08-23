@@ -37,7 +37,7 @@ An application that can be used to keep track of sneakers and show off pictures 
 |August 20| Prompt / Wireframes and Hierarchy / Timeframes / Project Approval | Incomplete
 |August 21| Core Application Structure | Incomplete
 |August 22| Pseudocode / actual code | Incomplete
-|August 23 - 24| Coding / Intial Clickable Model / MVP | Incomplete
+|August 23 - 24| Coding / Initial Clickable Model / MVP | Incomplete
 |August 25 - 26| Styling with CSS Grid (Responsive Design) / Deployment | Incomplete
 |August 27| Presentation | Incomplete
 
