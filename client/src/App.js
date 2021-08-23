@@ -27,8 +27,8 @@ function App() {
       </nav>
       <div className="App">
         <Route path="/" exact>
-          {sneakers.map((sneaker) => (
-            <Link to={`/${sneaker.id}`}>{sneaker.fields.sneaker}</Link>
+          {sneakers.map((sneaker, index) => (
+            <Link to={`/${sneaker.id}`}>{sneaker.fields.name}</Link>
           ))}
         </Route>
         <Route path="/new" exact>
