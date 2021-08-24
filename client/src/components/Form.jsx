@@ -12,10 +12,10 @@ function Form(props) {
     const newSneaker = {
       name,
       sku,
-      images
+      images,
     };
     await axios.post(baseURL, { fields: newSneaker }, config);
-    props.setToggleFetch(prevToggleFetch => !prevToggleFetch);
+    props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ function Form(props) {
         value={sku}
         onChange={(e) => setSKU(e.target.value)}
       />
-
+    <br />
       <label htmlFor="images">Images: </label>
       <input
         id="images"
@@ -44,6 +44,7 @@ function Form(props) {
         value={images}
         onChange={(e) => setImages(e.target.value)}
       />
+      <br />
       <button type="submit">Add to Collection</button>
     </form>
   );

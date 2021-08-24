@@ -8,7 +8,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Masonry from "react-masonry-css";
 
-
 function App() {
   const [sneakers, setSneakers] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
@@ -38,13 +37,12 @@ function App() {
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
               >
-               
-
-
-
-
-                <img className="sneaker-pics" onClick={() => setModalShow(true)} src={sneaker.fields.images} alt={sneaker.fields.name}
-                 />
+                <img
+                  className="sneaker-pics"
+                  onClick={() => setModalShow(true)}
+                  src={sneaker.fields.images}
+                  alt={sneaker.fields.name}
+                />
               </Masonry>
             </Link>
           ))}
@@ -52,15 +50,15 @@ function App() {
         <Route path="/new" exact>
           <Form setToggleFetch={setToggleFetch} />
         </Route>
-        <Route
-          path={"/:id"} exact
-        >
-          <Sneaker show={modalShow}
-        onHide={() => setModalShow(false)} sneakers={sneakers} setToggleFetch={setToggleFetch} />
+        <Route path={"/:id"} exact>
+          <Sneaker
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+            sneakers={sneakers}
+            setToggleFetch={setToggleFetch}
+          />
         </Route>
-        <Route
-          path="/edit/:id"
-        >
+        <Route path="/edit/:id">
           <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>
       </div>
