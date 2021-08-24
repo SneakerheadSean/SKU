@@ -5,6 +5,7 @@ import axios from "axios";
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import "../styles/Sneaker.css"
+import { useHistory } from "react-router-dom"
 
 
 function Sneaker(props) {
@@ -13,6 +14,7 @@ function Sneaker(props) {
   const [images, setImages] = useState("");
 
   const params = useParams();
+  const history = useHistory()
 
   useEffect(() => {
     if (params.id && props.sneakers.length > 0) {
@@ -31,6 +33,7 @@ function Sneaker(props) {
   const removeSneaker = async () => {
     await axios.delete(`${baseURL}/${params.id}`, config);
     props.setToggleFetch((prevState) => !prevState);
+    history.push("/")
   };
   
   return (
