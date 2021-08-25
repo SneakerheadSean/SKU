@@ -44,14 +44,9 @@ function App() {
     </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-2">Link</Nav.Link>
+    <Nav.Link eventKey="link-2">Social</Nav.Link>
   </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
+  </Nav>
       </header>
       
       <div className="App">
@@ -91,7 +86,7 @@ function App() {
         </Route>
       </div>
       <footer>
-        <h5>This is my footer</h5>
+        <h5>TheHypeBeastDeveloper</h5>
       </footer>
     </>
   );
