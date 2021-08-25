@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   /* max-width: 800px; */
   margin: 0 auto;
+  background-color: #282c34;
 }
 
 
@@ -21,6 +22,10 @@
 }
 
 .App-Name {
+  text-align: center;
+}
+
+footer {
   text-align: center;
 }
 

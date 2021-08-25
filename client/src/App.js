@@ -90,6 +90,9 @@ function App() {
           <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>
       </div>
+      <footer>
+        <h5>This is my footer</h5>
+      </footer>
     </>
   );
 }
