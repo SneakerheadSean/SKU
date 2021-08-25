@@ -1,6 +1,6 @@
 ## SKU
 
-[SKU]https://sku-app.netlify.app/
+https://sku-app.netlify.app/
 
 ## Description
 
