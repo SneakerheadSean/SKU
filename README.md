@@ -1,6 +1,6 @@
 ## SKU
 
-Deployed Site (TBD)
+[SKU]https://sku-app.netlify.app/
 
 ## Description
 
