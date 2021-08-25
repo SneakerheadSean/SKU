@@ -16,9 +16,9 @@ function Sneaker(props) {
   const history = useHistory();
 
   useEffect(() => {
-    if (params.id && props.sneakers.length > 0) {
+    if (props.id && props.sneakers.length > 0) {
       const thisSneaker = props.sneakers.find(
-        (sneaker) => params.id === sneaker.id
+        (sneaker) => props.id === sneaker.id
       );
       if (thisSneaker) {
         setName(thisSneaker.fields.name);
@@ -26,10 +26,10 @@ function Sneaker(props) {
         setImages(thisSneaker.fields.images);
       }
     }
-  }, [params.id, props.sneakers]);
+  }, [props.id, props.sneakers]);
 
   const removeSneaker = async () => {
-    await axios.delete(`${baseURL}/${params.id}`, config);
+    await axios.delete(`${baseURL}/${props.id}`, config);
     props.setToggleFetch((prevState) => !prevState);
     history.push("/");
   };

@@ -6,14 +6,16 @@ import Sneaker from "./components/Sneaker";
 import Form from "./components/Form";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup'
-import Nav from 'react-bootstrap/Nav'
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function App() {
   const [sneakers, setSneakers] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
   const [modalShow, setModalShow] = useState(false);
+  const [id, setId] = useState("");
 
   useEffect(() => {
     const getSneakers = async () => {
@@ -25,62 +27,87 @@ function App() {
   return (
     <>
       <header className="App-Header">
-        <div className="App-Name"height="100%" width="80%">
+        <div className="App-Name" height="100%" width="80%">
           <h1>SKU</h1>
         </div>
 
-      <div>
-        <img src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg" alt="Sean Hughes sitting down" />
-      </div>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-  <Nav.Item>
-          <Nav.Link>
-          <Link to="/">Home</Link>
-    </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-          <Nav.Link>
-          <Link to="/new" >Add Sneaker</Link>
-    </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">Social</Nav.Link>
-  </Nav.Item>
-  </Nav>
+        <div>
+          <img
+            src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg"
+            alt="Sean Hughes sitting down"
+          />
+        </div>
+        <Nav fill variant="tabs" defaultActiveKey="/home">
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/">Home</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/new">Add Sneaker</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <NavDropdown title="Socials" id="nav-dropdown">
+            {/* <NavDropdown.Item eventKey="https://www.instagram.com/thehypebeastdeveloper/">
+                            Instagram
+            </NavDropdown.Item> */}
+              <a
+                href="https://www.instagram.com/thehypebeastdeveloper/"
+                alt="instagram"
+                target="_blank"
+              rel="noreferrer"
+              
+              >
+            <NavDropdown.Item eventKey="4.2">
+                Instagram
+            </NavDropdown.Item>
+              </a>
+            <NavDropdown.Item eventKey="4.3">Github</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
       </header>
-      
+
       <div className="App">
         <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
-            <Link to={`/${sneaker.id}`} key={index}>
-              <CardGroup>
-                <Card>
+            // <Link to={`/${sneaker.id}`} key={index}>
+            <CardGroup>
+              <Card>
                 <img
                   className="sneaker-pics"
-                  onClick={() => setModalShow(true)}
+                  onClick={() => {
+                    setId(sneaker.id);
+                    setModalShow(true);
+                  }}
                   src={sneaker.fields.images}
                   alt={sneaker.fields.name}
                 />
-                </Card>
-                
-              </CardGroup>
-              </Link>
-                
-            
+              </Card>
+            </CardGroup>
+            // </Link>
           ))}
+          <Sneaker
+            show={modalShow}
+            id={id}
+            onHide={() => setModalShow(false)}
+            sneakers={sneakers}
+            setToggleFetch={setToggleFetch}
+          />
         </Route>
         <Route path="/new" exact>
-          <Form
-             setToggleFetch={setToggleFetch} />
+          <Form setToggleFetch={setToggleFetch} />
         </Route>
-        <Route path={"/:id"} exact>
+        {/* <Route path={"/:id"} exact>
           <Sneaker
             show={modalShow}
             onHide={() => setModalShow(false)}
             sneakers={sneakers}
             setToggleFetch={setToggleFetch}
           />
-        </Route>
+        </Route> */}
         <Route path="/edit/:id">
           <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>

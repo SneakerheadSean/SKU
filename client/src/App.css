@@ -8,7 +8,9 @@
   background-color: #282c34;
 }
 
-
+#insta {
+  z-index: 15;
+}
 
 .App-header {
   background-color: #282c34;

@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 
-
 function Form(props) {
   const [name, setName] = useState("");
   const [sku, setSKU] = useState("");
@@ -19,7 +18,6 @@ function Form(props) {
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
 
-  
   return (
     <form onSubmit={handleSubmit}>
       <br />
@@ -39,7 +37,7 @@ function Form(props) {
         value={sku}
         onChange={(e) => setSKU(e.target.value)}
       />
-    <br />
+      <br />
       <label htmlFor="images">Images: </label>
       <input
         id="images"
