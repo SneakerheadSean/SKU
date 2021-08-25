@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 
+
 function Form(props) {
   const [name, setName] = useState("");
   const [sku, setSKU] = useState("");
@@ -17,6 +18,8 @@ function Form(props) {
     await axios.post(baseURL, { fields: newSneaker }, config);
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
+
+  
   return (
     <form onSubmit={handleSubmit}>
       <br />

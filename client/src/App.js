@@ -6,7 +6,9 @@ import Sneaker from "./components/Sneaker";
 import Form from "./components/Form";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Masonry from "react-masonry-css";
+import Card from 'react-bootstrap/Card'
+import CardGroup from 'react-bootstrap/CardGroup'
+import Nav from 'react-bootstrap/Nav'
 
 function App() {
   const [sneakers, setSneakers] = useState([]);
@@ -16,39 +18,65 @@ function App() {
   useEffect(() => {
     const getSneakers = async () => {
       const resp = await axios(baseURL, config);
-      console.log(resp.data.records);
       setSneakers(resp.data.records);
     };
     getSneakers();
   }, [toggleFetch]);
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/new">Add Sneaker</Link>
-      </nav>
+      <header className="App-Header">
+        <div className="App-Name"height="100%" width="80%">
+          <h1>SKU</h1>
+        </div>
+
+      <div>
+        <img src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg" alt="Sean Hughes sitting down" />
+      </div>
+      <Nav fill variant="tabs" defaultActiveKey="/home">
+  <Nav.Item>
+          <Nav.Link>
+          <Link to="/">Home</Link>
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+          <Nav.Link>
+          <Link to="/new" >Add Sneaker</Link>
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-2">Link</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="disabled" disabled>
+      Disabled
+    </Nav.Link>
+  </Nav.Item>
+</Nav>
+      </header>
+      
       <div className="App">
         <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
             <Link to={`/${sneaker.id}`} key={index}>
-              <Masonry
-                breakpointCols={3}
-                className="my-masonry-grid"
-                columnClassName="my-masonry-grid_column"
-              >
+              <CardGroup>
+                <Card>
                 <img
                   className="sneaker-pics"
                   onClick={() => setModalShow(true)}
                   src={sneaker.fields.images}
                   alt={sneaker.fields.name}
                 />
-              </Masonry>
-            </Link>
+                </Card>
+                
+              </CardGroup>
+              </Link>
+                
+            
           ))}
         </Route>
         <Route path="/new" exact>
-          <Form setToggleFetch={setToggleFetch} />
+          <Form
+             setToggleFetch={setToggleFetch} />
         </Route>
         <Route path={"/:id"} exact>
           <Sneaker

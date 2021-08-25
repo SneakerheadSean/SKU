@@ -38,7 +38,7 @@ function Sneaker(props) {
     <>
       <Modal
         {...props}
-        size="lg"
+        size="xxxl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
