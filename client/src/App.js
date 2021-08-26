@@ -27,16 +27,17 @@ function App() {
   return (
     <>
       <header className="App-Header">
-        <div className="App-Name" height="100%" width="80%">
+        <div className="App-Name">
           <h1>SKU</h1>
-        </div>
 
         <div>
           <img
             src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg"
             alt="Sean Hughes sitting down"
-          />
+            
+            />
         </div>
+            </div>
         <Nav fill variant="tabs" defaultActiveKey="/home">
           <Nav.Item>
             <Nav.Link>
