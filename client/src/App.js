@@ -28,33 +28,36 @@ function App() {
     <>
       <header className="App-Header">
         <div className="App-Name">
-          <h1>SKU</h1>
+          <Link to="/">
+            <h1>SKU</h1>
+          </Link>
 
-        <div>
-          <img
-            src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg"
-            alt="Sean Hughes sitting down"
-            
+          <div>
+            <img
+              src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg"
+              alt="Sean Hughes sitting down"
             />
+          </div>
         </div>
-            </div>
         <Nav fill variant="tabs" defaultActiveKey="/home">
+          {/* <Nav.Item>
+            <Nav.Link>
+            </Nav.Link>
+          </Nav.Item> */}
           <Nav.Item>
             <Nav.Link>
-              <Link to="/">Home</Link>
+              <Link to="/new">
+                <h3>Add Sneaker</h3>
+              </Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/new">Add Sneaker</Link>
+              <Link to="/About-Me">
+                <h3>About Me</h3>
+              </Link>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/About-Me">About Me</Link>
-            </Nav.Link>
-          </Nav.Item>
-          
         </Nav>
       </header>
 
@@ -102,7 +105,6 @@ function App() {
         <Route path="/About-me">
           <About />
         </Route>
-      
       </div>
       <footer>
         <h5>TheHypeBeastDeveloper</h5>
