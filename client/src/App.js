@@ -10,6 +10,7 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Nav from "react-bootstrap/Nav";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   const [sneakers, setSneakers] = useState([]);
@@ -106,11 +107,9 @@ function App() {
           <About />
         </Route>
       </div>
-      <footer>
-        
-        <h5>TheHypeBeastDeveloper</h5>
-      </footer>
+        <Footer></Footer>
     </>
+     
   );
 }
 
