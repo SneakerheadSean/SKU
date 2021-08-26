@@ -127,16 +127,16 @@ function About() {
     </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="0">
-    <Accordion.Header>Instagram</Accordion.Header>
+    <Accordion.Header>LinkedIn</Accordion.Header>
           <Accordion.Body>
-            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+            <a href="https://www.linkedin.com/in/seanhughes3/">Let's Connect!</a>
   
     </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="0">
-    <Accordion.Header>Instagram</Accordion.Header>
+    <Accordion.Header>GitHub</Accordion.Header>
           <Accordion.Body>
-            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+            <a href="https://github.com/SneakerheadSean">Let's Build Together!</a>
   
     </Accordion.Body>
   </Accordion.Item>
