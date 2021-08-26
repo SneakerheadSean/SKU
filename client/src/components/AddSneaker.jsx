@@ -25,10 +25,7 @@ function AddSneaker(props) {
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>
-            <h3>
-
-            Sneaker Name
-            </h3>
+            <h3>Sneaker Name</h3>
           </Form.Label>
           <Form.Control
             placeholder="Nike Air Max"
@@ -43,10 +40,9 @@ function AddSneaker(props) {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label><h3>
-
-SKU
-</h3> </Form.Label>
+          <Form.Label>
+            <h3>SKU</h3>
+          </Form.Label>
           <Form.Control
             placeholder="CD57188-800"
             id="sku"
@@ -57,10 +53,9 @@ SKU
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label><h3>
-
-Image
-</h3></Form.Label>
+          <Form.Label>
+            <h3>Image</h3>
+          </Form.Label>
           <Form.Control
             placeholder="Enter URL"
             id="images"
