@@ -41,10 +41,6 @@ function App() {
           </div>
         </div>
         <Nav fill variant="tabs" defaultActiveKey="/home">
-          {/* <Nav.Item>
-            <Nav.Link>
-            </Nav.Link>
-          </Nav.Item> */}
           <Nav.Item>
             <Nav.Link>
               <Link to="/new">
@@ -65,7 +61,7 @@ function App() {
       <div className="App">
         <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
-            // <Link to={`/${sneaker.id}`} key={index}>
+            
             <CardGroup>
               <Card>
                 <img
@@ -79,7 +75,7 @@ function App() {
                 />
               </Card>
             </CardGroup>
-            // </Link>
+            
           ))}
           <Sneaker
             show={modalShow}
@@ -92,14 +88,7 @@ function App() {
         <Route path="/new" exact>
           <AddSneaker setToggleFetch={setToggleFetch} />
         </Route>
-        {/* <Route path={"/:id"} exact>
-          <Sneaker
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            sneakers={sneakers}
-            setToggleFetch={setToggleFetch}
-          />
-        </Route> */}
+        
         <Route path="/edit/:id">
           <AddSneaker sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>

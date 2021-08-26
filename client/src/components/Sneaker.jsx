@@ -6,13 +6,12 @@ import Button from "react-bootstrap/Button";
 import "../styles/Sneaker.css";
 import { useHistory } from "react-router-dom";
 
-
 function Sneaker(props) {
   const [name, setName] = useState("");
   const [sku, setSKU] = useState("");
   const [images, setImages] = useState("");
 
-  // const params = useParams();
+  
   const history = useHistory();
 
   useEffect(() => {
@@ -52,7 +51,6 @@ function Sneaker(props) {
         <Modal.Body>
           <img className="sneaker-info" src={images} alt={name} />
         </Modal.Body>
-        
       </Modal>
     </>
   );
