@@ -11,7 +11,6 @@ function Sneaker(props) {
   const [sku, setSKU] = useState("");
   const [images, setImages] = useState("");
 
-  
   const history = useHistory();
 
   useEffect(() => {
