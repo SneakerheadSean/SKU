@@ -17,7 +17,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51403026192_57457a51e9_o_d.jpg"
+            src="https://live.staticflickr.com/65535/51403026192_be526979c7_c_d.jpg"
             alt="graduation"
           />
           <Carousel.Caption>
@@ -28,7 +28,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51404750785_4bfbc96030_o_d.jpg"
+            src="https://live.staticflickr.com/65535/51404750785_aa64853fe2_c_d.jpg"
             alt="sitting on the bench"
           />
 
@@ -40,7 +40,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51404518399_7522e87327_k_d.jpg"
+            src="https://live.staticflickr.com/65535/51404518399_2c2a4f1cfb_c_d.jpg"
             alt="girl sitting on the bench"
           />
 
@@ -52,7 +52,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51403773146_e3cb8f05c9_h_d.jpg"
+            src="https://live.staticflickr.com/65535/51403773146_2e1cb43e6f_c_d.jpg"
             alt="girl sitting on the bench"
           />
 
@@ -64,7 +64,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51404032238_06de13a43c_h_d.jpg"
+            src="https://live.staticflickr.com/65535/51404032238_d882458e47_c_d.jpg"
             alt="graduation"
           />
           <Carousel.Caption>
@@ -75,7 +75,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51403852681_2b61ddaaa9_k_d.jpg"
+            src="https://live.staticflickr.com/65535/51403852681_ca07a13c0e_c_d.jpg"
             alt="Married in Nature"
           />
 
@@ -87,7 +87,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51403848936_fc63cb19ca_k_d.jpg"
+            src="https://live.staticflickr.com/65535/51403848936_58ee2052ba_c_d.jpg"
             alt="Mom"
           />
 
@@ -99,7 +99,7 @@ function About() {
         <Carousel.Item>
           <img
             className="hughes"
-            src="https://live.staticflickr.com/65535/51404111978_2e9c609a27_k_d.jpg"
+            src="https://live.staticflickr.com/65535/51404829740_10ef08d6df_c_d.jpg"
             alt="Married in Nature"
           />
 

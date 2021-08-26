@@ -6,12 +6,12 @@
   max-width: 1200px;
   margin: 0 auto;
   text-decoration: none;
+  min-height: 100vh;
   
 }
 
-#insta {
-  z-index: 15;
-}
+
+
 
 .App-header {
   background-color: #282c34;
@@ -31,6 +31,7 @@
 
 footer {
   text-align: center;
+
 }
 
 .App-link {
@@ -50,7 +51,7 @@ footer {
 }
 
 /* Style your items */
-.my-masonry-grid_column > img {
+.my-masonry-grid_column > div {
   /* change div to reference your elements you put in <Masonry> */
   background: grey;
   /* margin-bottom: 30px; */

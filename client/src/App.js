@@ -32,9 +32,9 @@ function App() {
             <h1>SKU</h1>
           </Link>
 
-          <div>
+          <div className="profile-pic">
             <img
-              src="https://live.staticflickr.com/65535/51401900331_f3bdb49090_k_d.jpg"
+              src="https://live.staticflickr.com/65535/51401900331_08e1b76742_o_d.jpg"
               alt="Sean Hughes sitting down"
             />
           </div>
@@ -83,7 +83,7 @@ function App() {
           <Sneaker
             show={modalShow}
             id={id}
-            onHide={() => setModalShow(false)}
+                        onHide={() => setModalShow(false)}
             sneakers={sneakers}
             setToggleFetch={setToggleFetch}
           />
