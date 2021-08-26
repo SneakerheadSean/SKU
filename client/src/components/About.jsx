@@ -1,14 +1,16 @@
 import Carousel from "react-bootstrap/Carousel";
+import Accordion from 'react-bootstrap/Accordion'
+import "../styles/AboutMe.css"
 
 function About() {
   return (
-    <>
+    <div className="aboutme">
       
         <h1>
           Hey, My name is Sean Hughes and when I'm not learning about software development, I enjoy photography.
           I mostly do portraits and family events such as graduations and
           weddings. Below are a few examples of my work.{" "}
-        </h1>
+      </h1>
       
 
       <Carousel>
@@ -107,7 +109,39 @@ function About() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </>
+      <h1>Let's Connect</h1>
+
+      <Accordion>
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>Instagram</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+  
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>Twitter</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://twitter.com/thehypebeastdev">Follow Me!</a>
+  
+    </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="0">
+    <Accordion.Header>Instagram</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+  
+    </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="0">
+    <Accordion.Header>Instagram</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+  
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
+    </div>
   );
 }
 
