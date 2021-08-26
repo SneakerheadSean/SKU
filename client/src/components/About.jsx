@@ -7,10 +7,42 @@ function About() {
     <div className="aboutme">
       
         <h1>
-          Hey, My name is Sean Hughes and when I'm not learning about software development, I enjoy photography.
+          My name is Sean Hughes and when I'm not learning about software development, I enjoy photography.
           I mostly do portraits and family events such as graduations and
           weddings. Below are a few examples of my work.{" "}
       </h1>
+      <h1>Let's Connect</h1>
+
+      <Accordion>
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>Instagram</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
+  
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1">
+    <Accordion.Header>Twitter</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://twitter.com/thehypebeastdev">Follow Me!</a>
+  
+    </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+    <Accordion.Header>LinkedIn</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://www.linkedin.com/in/seanhughes3/">Let's Connect!</a>
+  
+    </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+    <Accordion.Header>GitHub</Accordion.Header>
+          <Accordion.Body>
+            <a href="https://github.com/SneakerheadSean">Let's Build Together!</a>
+  
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
       
 
       <Carousel>
@@ -109,38 +141,6 @@ function About() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <h1>Let's Connect</h1>
-
-      <Accordion>
-  <Accordion.Item eventKey="0">
-    <Accordion.Header>Instagram</Accordion.Header>
-          <Accordion.Body>
-            <a href="https://www.instagram.com/thehypebeastdeveloper/">Follow Me!</a>
-  
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="0">
-    <Accordion.Header>Twitter</Accordion.Header>
-          <Accordion.Body>
-            <a href="https://twitter.com/thehypebeastdev">Follow Me!</a>
-  
-    </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="0">
-    <Accordion.Header>LinkedIn</Accordion.Header>
-          <Accordion.Body>
-            <a href="https://www.linkedin.com/in/seanhughes3/">Let's Connect!</a>
-  
-    </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="0">
-    <Accordion.Header>GitHub</Accordion.Header>
-          <Accordion.Body>
-            <a href="https://github.com/SneakerheadSean">Let's Build Together!</a>
-  
-    </Accordion.Body>
-  </Accordion.Item>
-</Accordion>
     </div>
   );
 }
