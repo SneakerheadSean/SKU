@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Route, Link } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Sneaker from "./components/Sneaker";
-import Form from "./components/Form";
+import AddSneaker from "./components/AddSneaker";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
@@ -86,7 +86,7 @@ function App() {
           />
         </Route>
         <Route path="/new" exact>
-          <Form setToggleFetch={setToggleFetch} />
+          <AddSneaker setToggleFetch={setToggleFetch} />
         </Route>
         {/* <Route path={"/:id"} exact>
           <Sneaker
@@ -97,7 +97,7 @@ function App() {
           />
         </Route> */}
         <Route path="/edit/:id">
-          <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
+          <AddSneaker sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/About-me">
           <About />

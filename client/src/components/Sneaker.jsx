@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import "../styles/Sneaker.css";
 import { useHistory } from "react-router-dom";
 
+
 function Sneaker(props) {
   const [name, setName] = useState("");
   const [sku, setSKU] = useState("");
@@ -45,15 +46,13 @@ function Sneaker(props) {
           <Modal.Title id="contained-modal-title-vcenter">
             <h1>{name}</h1>
             <h2>{sku}</h2>
-            <button onClick={removeSneaker}>Remove From Collection!</button>
+            <Button onClick={removeSneaker}>Remove From Collection!</Button>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img className="sneaker-info" src={images} alt={name} />
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
+        
       </Modal>
     </>
   );
