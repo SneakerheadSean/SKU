@@ -3,15 +3,13 @@ import Carousel from "react-bootstrap/Carousel";
 function About() {
   return (
     <>
-      <div>
-        <h1>Who is Sean Hughes?</h1>
-        <br />
+      
         <h1>
-          When I'm not learning about software development, I enjoy photography.
+          Hey, My name is Sean Hughes and when I'm not learning about software development, I enjoy photography.
           I mostly do portraits and family events such as graduations and
           weddings. Below are a few examples of my work.{" "}
         </h1>
-      </div>
+      
 
       <Carousel>
         <Carousel.Item>
