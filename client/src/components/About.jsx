@@ -12,7 +12,7 @@ function About() {
           weddings. Below are a few examples of my work.{" "}
       </h1>
       <h1>Let's Connect</h1>
-
+<br />
       <Accordion>
   <Accordion.Item eventKey="0">
     <Accordion.Header>Instagram</Accordion.Header>
