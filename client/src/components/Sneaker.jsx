@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { baseURL, config } from "../services";
 import axios from "axios";
@@ -12,7 +11,7 @@ function Sneaker(props) {
   const [sku, setSKU] = useState("");
   const [images, setImages] = useState("");
 
-  const params = useParams();
+  // const params = useParams();
   const history = useHistory();
 
   useEffect(() => {

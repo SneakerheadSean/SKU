@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import About from "./components/About";
 
 function App() {
   const [sneakers, setSneakers] = useState([]);
@@ -48,25 +48,12 @@ function App() {
               <Link to="/new">Add Sneaker</Link>
             </Nav.Link>
           </Nav.Item>
-          <NavDropdown title="Socials" id="nav-dropdown">
-            {/* <NavDropdown.Item eventKey="https://www.instagram.com/thehypebeastdeveloper/">
-                            Instagram
-            </NavDropdown.Item> */}
-              <a
-                href="https://www.instagram.com/thehypebeastdeveloper/"
-                alt="instagram"
-                target="_blank"
-              rel="noreferrer"
-              
-              >
-            <NavDropdown.Item eventKey="4.2">
-                Instagram
-            </NavDropdown.Item>
-              </a>
-            <NavDropdown.Item eventKey="4.3">Github</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/About-Me">About Me</Link>
+            </Nav.Link>
+          </Nav.Item>
+          
         </Nav>
       </header>
 
@@ -111,6 +98,10 @@ function App() {
         <Route path="/edit/:id">
           <Form sneakers={sneakers} setToggleFetch={setToggleFetch} />
         </Route>
+        <Route path="/About-me">
+          <About />
+        </Route>
+      
       </div>
       <footer>
         <h5>TheHypeBeastDeveloper</h5>
