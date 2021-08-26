@@ -62,7 +62,7 @@ function App() {
         <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
             
-            <CardGroup>
+            <CardGroup className="card">
               <Card>
                 <img
                   className="sneaker-pics"
