@@ -9,6 +9,22 @@ An application that can be used to keep track of sneakers and show off pictures 
 ## API and Data Sample
 
 
+
+{
+    "records": 
+        {
+            "id": "recgiI21mdQoi9Y5U",
+            "fields": {
+                "name": "Air Jordan Retro 1 \"Shadow 2.0\"",
+                "images": "https://dl.airtable.com/.attachments/da222716b9fae02f81b8583b08eef328/db706556/CTS04897.JPG",
+                "sku": "555088-035"
+            },
+            "createdTime": "2021-08-19T16:03:04.000Z"
+        },
+        {
+        }
+
+
 ## Wireframes
 
 [Wireframe](https://whimsical.com/the-collection-HtbDfNPCDtjbmHBEGMdsU3)
@@ -19,14 +35,14 @@ An application that can be used to keep track of sneakers and show off pictures 
 
 #### MVP 
 
-- User can add, edit, and delete sneakers to their inventory.
-- Render that data to the browser.
+- Leverage Axios commands to GET, POST, and DELETE data from external API
+- Render data from external API to the browser via React Components
 
 
 
 #### PostMVP  
 
-- User can geo-code the sneakers by location where it was purchased and then see other sneakers in their collection that was also purchased there.
+- User can geo-code the sneakers by location where it was purchased and then see other sneakers in their collection that was also purchased.
 - Sneaker data entered by the user is ran against StockX and Goat to see current resell value.
 - User can search their collection.
 
@@ -34,12 +50,12 @@ An application that can be used to keep track of sneakers and show off pictures 
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 20| Prompt / Wireframes and Hierarchy / Timeframes / Project Approval | Incomplete
-|August 21| Core Application Structure | Incomplete
-|August 22| Pseudocode / actual code | Incomplete
-|August 23 - 24| Coding / Initial Clickable Model / MVP | Incomplete
-|August 25 - 26| Styling with CSS Grid (Responsive Design) / Deployment | Incomplete
-|August 27| Presentation | Incomplete
+|August 20| Prompt / Wireframes and Hierarchy / Timeframes / Project Approval | Complete
+|August 21| Core Application Structure | Complete
+|August 22| Pseudocode / actual code | Complete
+|August 23 - 24| Coding / Initial Clickable Model / MVP | Complete
+|August 25 - 26| Styling with CSS Grid (Responsive Design) / Deployment | Complete
+|August 27| Presentation | Complete
 
 
 ## Timeframes
@@ -51,24 +67,49 @@ S - Significant Priority (Next in line)
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Core Application Structure | H | 2hrs| -hrs | -hrs |
-| Working with API | H | 5hrs| -hrs | -hrs |
-| CSS Styling | H | 6hrs| -hrs | -hrs |
+| Core Application Structure | H | 6hrs| 6hrs | 8hrs |
+| Working with API | H | 5hrs| 4hrs | 8hrs |
+| Research and Development | H | 5hrs| 9hrs | 10hrs |
+| CSS Styling | H | 8hrs| 14hrs | 21hrs |
 | Post MVP | S | 3hrs| -hrs | -hrs |
-| Total | H | 16hrs| -hrs | -hrs |
+| Total | H | hrs| 27hrs | 47hrs |
 
 
 ## SWOT Analysis
 
-Strengths: 
-Weaknessess: 
-Opportunities: 
-Threats:
+Strengths: Learning Ability and willingness to understand new concepts
+Weaknessess: Attempting to achieve perfection
+Opportunities: Diving deeper into React and documentation
+Threats: 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+Accomplishing the task of rendering the images from the API to the browser via Cards and then having a modal appear once clicked. The code for this functionality is below.
 
+<Route path="/" exact>
+          {sneakers.map((sneaker, index) => (
+            
+            <CardGroup className="card">
+              <Card>
+                <img
+                  className="sneaker-pics"
+                  onClick={() => {
+                    setId(sneaker.id);
+                    setModalShow(true);
+                  }}
+                  src={sneaker.fields.images}
+                  alt={sneaker.fields.name}
+                />
+              </Card>
+            </CardGroup>
+            
+          ))}
+          <Sneaker
+            show={modalShow}
+            id={id}
+                        onHide={() => setModalShow(false)}
+            sneakers={sneakers}
+            setToggleFetch={setToggleFetch}
+          />
+        </Route>
 
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.
