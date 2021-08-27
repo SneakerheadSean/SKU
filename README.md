@@ -85,7 +85,7 @@ Threats:
 ## Code Snippet
 
 Accomplishing the task of rendering the images from the API to the browser via Cards and then having a modal appear once clicked. The code for this functionality is below.
-
+```
 <Route path="/" exact>
           {sneakers.map((sneaker, index) => (
             
@@ -112,4 +112,4 @@ Accomplishing the task of rendering the images from the API to the browser via C
             setToggleFetch={setToggleFetch}
           />
         </Route>
-
+```
