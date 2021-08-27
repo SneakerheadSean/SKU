@@ -72,7 +72,7 @@ S - Significant Priority (Next in line)
 | Research and Development | H | 5hrs| 9hrs | 10hrs |
 | CSS Styling | H | 8hrs| 14hrs | 21hrs |
 | Post MVP | S | 3hrs| -hrs | -hrs |
-| Total | H | hrs| 27hrs | 47hrs |
+| Total | H | 35hrs| 42hrs | 47hrs |
 
 
 ## SWOT Analysis
