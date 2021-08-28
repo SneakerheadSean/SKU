@@ -11,6 +11,8 @@ import CardGroup from "react-bootstrap/CardGroup";
 import Nav from "react-bootstrap/Nav";
 import About from "./components/About";
 
+// React Components have been used throughout the project.
+
 
 function App() {
   const [sneakers, setSneakers] = useState([]);
