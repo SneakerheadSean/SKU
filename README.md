@@ -50,12 +50,12 @@ An application that can be used to keep track of sneakers and show off pictures 
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 20| Prompt / Wireframes and Hierarchy / Timeframes / Project Approval | Complete
+|August 20| Prompt / Wireframes and Hierarchy / Timeframes | Complete
 |August 21| Core Application Structure | Complete
 |August 22| Pseudocode / actual code | Complete
 |August 23 - 24| Coding / Initial Clickable Model / MVP | Complete
 |August 25 - 26| Styling with CSS (Responsive Design) / Deployment | Complete
-|August 27| Presentation | Complete
+|August 27| Deliver to Client | Complete
 
 
 ## Timeframes
